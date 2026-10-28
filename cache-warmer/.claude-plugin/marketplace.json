@@ -1,0 +1,5 @@
+{
+  "name": "cache-warmer-local",
+  "owner": { "name": "lumen-limitless" },
+  "plugins": [{ "name": "cache-warmer", "source": "./" }]
+}

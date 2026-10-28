@@ -1,0 +1,19 @@
+{
+  "name": "lumen-mods",
+  "owner": {
+    "name": "lumen-limitless"
+  },
+  "description": "Claude Code mods by lumen-limitless: cache-warmer and superpowers-progress",
+  "plugins": [
+    {
+      "name": "cache-warmer",
+      "source": "./cache-warmer",
+      "description": "A small pane counting down the prompt cache's life, with a Keep warm toggle that refreshes it with a hidden ping before it expires"
+    },
+    {
+      "name": "superpowers-progress",
+      "source": "./superpowers-progress",
+      "description": "Progress bar above the prompt for superpowers workflows, plus a crew panel (/crew) with a pixel crab for every subagent"
+    }
+  ]
+}

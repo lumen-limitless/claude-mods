@@ -1,0 +1,25 @@
+{
+  "name": "cache-warmer",
+  "version": "0.2.0",
+  "description": "A small pane counting down the prompt cache's life, with a Keep warm toggle that refreshes it with a hidden ping before it expires",
+  "author": {
+    "name": "lumen-limitless"
+  },
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "userConfig": {
+    "minContext": {
+      "type": "string",
+      "title": "Keep warm only above",
+      "description": "Keep warm holds off while the cached conversation is smaller than this: a rebuild of a small context is cheap, and a ping's fixed cost is a larger share of it",
+      "options": [
+        "any",
+        "25k",
+        "50k",
+        "100k",
+        "200k"
+      ],
+      "default": "50k"
+    }
+  }
+}

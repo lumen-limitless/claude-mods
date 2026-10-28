@@ -1,0 +1,33 @@
+{
+  "name": "superpowers-progress",
+  "version": "0.1.0",
+  "description": "Progress bar above the prompt for superpowers workflows (brainstorm, plan, build, review, finish), plus a crew panel (/crew) with a unique pixel crab for every subagent.",
+  "author": {
+    "name": "lumen-limitless"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoOpen": {
+      "type": "string",
+      "title": "Open the crew panel",
+      "description": "superpowers: when a plan starts executing or a superpowers subagent starts; any: also when any other subagent starts; off: only with /crew",
+      "default": "superpowers",
+      "options": [
+        "superpowers",
+        "any",
+        "off"
+      ]
+    },
+    "workerSteps": {
+      "type": "string",
+      "title": "Worker step reports",
+      "description": "on: superpowers subagents get one line asking them to report their steps, which draws a per-crab progress bar; off: their bars show context fill instead",
+      "default": "on",
+      "options": [
+        "on",
+        "off"
+      ]
+    }
+  },
+  "license": "MIT"
+}
